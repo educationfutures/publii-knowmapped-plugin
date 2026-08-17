@@ -61,7 +61,7 @@ The plugin writes a small, validated placeholder into generated HTML only where 
 
 The viewer requests public map data from `https://app.knowmapped.com/api/embed/v1/maps/{id}`. Map fonts are self-hosted by KnowMapped and cached by the browser. The page's Content Security Policy must therefore permit the two KnowMapped origins for the applicable script, style, connection, and font directives.
 
-Map titles inherit the publication's typography so the embed feels native to the site. Concepts and relationships use the map's selected typeface. Saved theme colors, canvas treatment, hierarchy emphasis, relationship strength—including dashed weak relationships—and supported edge routing are preserved by the shared viewer.
+Map titles inherit the publication's typography so the embed feels native to the site. Concepts and relationships use the map's selected typeface. The shared viewer preserves saved theme colors plus theme-specific node geometry and borders, hierarchy weights, relationship lines and labels, grid treatment, relationship strength—including dashed weak relationships—and supported edge routing.
 
 The remote viewer files are intentionally not bundled in this repository. This keeps the Publii package small and avoids Publii's large-plugin-asset limitations while ensuring the renderer and its stylesheet remain matched.
 
