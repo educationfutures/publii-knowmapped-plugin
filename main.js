@@ -5,7 +5,7 @@ const ATTRIBUTE_PATTERN = /([a-z][a-z0-9_-]*)\s*=\s*(?:"([^"]*)"|'([^']*)'|“([
 const UUID_PATTERN = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
 const EMBED_MARKER = 'data-knowledge-map-embed="true"';
 const ASSET_MARKER = 'data-knowledge-map-assets="true"';
-const ASSET_VERSION = '1.11.16';
+const ASSET_VERSION = '1.11.19';
 const PUBLIC_SITE_URL = 'https://app.knowmapped.com';
 const VIEWER_BASE_URL = 'https://knowmapped.com/embed/v1';
 const WIDTHS = new Set(['normal', 'wide', 'full']);

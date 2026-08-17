@@ -3,7 +3,7 @@
     "description": "Embeds public KnowMapped maps natively in Publii posts and pages.",
     "license": "MIT",
     "author": "Education Futures",
-    "version": "1.11.16",
+    "version": "1.11.19",
     "scope": "site",
     "minimumPubliiVersion": "0.46.0",
     "usePluginSettingsView": false,
