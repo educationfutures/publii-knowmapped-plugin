@@ -1,6 +1,6 @@
 'use strict';
 
-const SHORTCODE_PATTERN = /\[knowledge-map(?:\s+([^\]]*))?\]/gi;
+const SHORTCODE_PATTERN = /\[knowmapped(?:\s+([^\]]*))?\]/gi;
 const ATTRIBUTE_PATTERN = /([a-z][a-z0-9_-]*)\s*=\s*(?:"([^"]*)"|'([^']*)'|“([^”]*)”|‘([^’]*)’|([^\s"'\u201c\u201d\u2018\u2019=<>`]+))/gi;
 const UUID_PATTERN = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
 const EMBED_MARKER = 'data-knowledge-map-embed="true"';
@@ -27,12 +27,12 @@ class KnowledgeMapEmbedsPlugin {
     }
 
     processContent(rendererInstance, text) {
-        if (typeof text !== 'string' || !text.toLowerCase().includes('[knowledge-map')) {
+        if (typeof text !== 'string' || !text.toLowerCase().includes('[knowmapped')) {
             return text;
         }
 
         const unwrapped = text.replace(
-            /<p(?:\s[^>]*)?>\s*(\[knowledge-map(?:\s+[^\]]*)?\])\s*<\/p>/gi,
+            /<p(?:\s[^>]*)?>\s*(\[knowmapped(?:\s+[^\]]*)?\])\s*<\/p>/gi,
             '$1'
         );
         return unwrapped.replace(SHORTCODE_PATTERN, (shortcode, rawAttributes) => {

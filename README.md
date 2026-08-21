@@ -24,13 +24,13 @@ For local packaging, place `main.js`, `plugin.json`, `thumbnail.svg`, `LICENSE`,
 Copy the UUID from a map's public KnowMapped URL and use it as the `id`:
 
 ```text
-[knowledge-map id="35d6010c-6707-4d6a-b6d9-241fec5d4a8e"]
+[knowmapped id="35d6010c-6707-4d6a-b6d9-241fec5d4a8e"]
 ```
 
 A seamless, wide presentation can be created with:
 
 ```text
-[knowledge-map id="MAP_UUID" title="hide" width="wide" frame="hide" background="hide" exploration="hide"]
+[knowmapped id="MAP_UUID" title="hide" width="wide" frame="hide" background="hide" exploration="hide"]
 ```
 
 ## Shortcode options
